@@ -14,10 +14,10 @@ export const GlobalStyles = createGlobalStyle`
         --green-75: #d3ee91;
         --green-80: #dcf1a7;
         --green-85: #e5f5bd;
-        --gren-90: #eef8d3;
-        --gren-95: #f6fbe9;
-        --gren-97: #fafdf2;
-        --gren-99: #fdfefb;
+        --green-90: #eef8d3;
+        --green-95: #f6fbe9;
+        --green-97: #fafdf2;
+        --green-99: #fdfefb;
         --dark-green-15: #1a3129;
         --dark-green-20: #234338;
         --dark-green-25: #2c5446;
