@@ -6,9 +6,7 @@ import { Team } from "./Pages/Team"
 import { Process } from "./Pages/Process"
 import { Pricing } from "./Pages/Pricing"
 import { Blog } from "./Pages/Blog"
-
-
-
+import { Contact } from "./Pages/Contact"
 
 const router = createBrowserRouter([
     {
@@ -38,6 +36,10 @@ const router = createBrowserRouter([
             {
                 path: 'blog',
                 element: <Blog />
+            },
+            {
+                path: 'contact',
+                element: <Contact />
             }
             
         ]
