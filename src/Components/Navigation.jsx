@@ -3,7 +3,6 @@ import { ContainerWrapper } from "./ContainerWrapper";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import { useState } from "react";
-import { Button } from "./Button";
 
 const Nav = styled.nav`
   background-color: var(--dark-green-15);
@@ -62,19 +61,19 @@ const NavItem = styled.div.withConfig({
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   flex-direction: column;
   background: var(--dark-green-15);
-  width: 100vw;
+  width: 100%;
   padding: 0 18px;
   color: var(--green-97);
   position: absolute;
-  top: 75px;
+  top: 92px;
   left: 0;
 
   a {
     margin: 4px 0;
   }
 
-  a:hover:not(:last-child),
-  a.active:not(:last-child) {
+  a:hover,
+  a.active {
     color: var(--green-70);
   }
 
@@ -82,7 +81,6 @@ const NavItem = styled.div.withConfig({
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    align-items: center;
     position: relative;
     top: unset;
     a {
@@ -97,7 +95,6 @@ const NavItem = styled.div.withConfig({
     }
   }
 `;
-
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,7 +117,6 @@ export const Navigation = () => {
               <NavLink to="process">Process</NavLink>
               <NavLink to="pricing">Pricing</NavLink>
               <NavLink to="blog">Blog</NavLink>
-              <Button href="contact">Contact Us</Button>
             </NavItem>
           </NavWrapper>
         </ContainerWrapper>
