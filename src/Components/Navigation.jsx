@@ -3,7 +3,10 @@ import { ContainerWrapper } from "./ContainerWrapper";
 import { Link, NavLink } from "react-router-dom";
 import Logo from "../assets/logo.png";
 import { useState } from "react";
+<<<<<<< HEAD
 import { Button } from "./Button";
+=======
+>>>>>>> c1f8a77035d97d2bd46a9ebb1c38460cbe166627
 
 const Nav = styled.nav`
   background-color: var(--dark-green-15);
@@ -62,16 +65,25 @@ const NavItem = styled.div.withConfig({
   display: ${({ isOpen }) => (isOpen ? "flex" : "none")};
   flex-direction: column;
   background: var(--dark-green-15);
+<<<<<<< HEAD
   width: 100vw;
   padding: 0 18px;
   color: var(--green-97);
   position: absolute;
   top: 75px;
+=======
+  width: 100%;
+  padding: 0 18px;
+  color: var(--green-97);
+  position: absolute;
+  top: 92px;
+>>>>>>> c1f8a77035d97d2bd46a9ebb1c38460cbe166627
   left: 0;
 
   a {
     margin: 4px 0;
   }
+<<<<<<< HEAD
 
   a:hover:not(:last-child),
   a.active:not(:last-child) {
@@ -97,7 +109,32 @@ const NavItem = styled.div.withConfig({
     }
   }
 `;
+=======
+>>>>>>> c1f8a77035d97d2bd46a9ebb1c38460cbe166627
 
+  a:hover,
+  a.active {
+    color: var(--green-70);
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    top: unset;
+    a {
+        margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: 1920px) {
+    a {
+      font-size: 18px;
+      margin-right: 26px;
+    }
+  }
+`;
 
 export const Navigation = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -120,7 +157,10 @@ export const Navigation = () => {
               <NavLink to="process">Process</NavLink>
               <NavLink to="pricing">Pricing</NavLink>
               <NavLink to="blog">Blog</NavLink>
+<<<<<<< HEAD
               <Button href="contact">Contact Us</Button>
+=======
+>>>>>>> c1f8a77035d97d2bd46a9ebb1c38460cbe166627
             </NavItem>
           </NavWrapper>
         </ContainerWrapper>
